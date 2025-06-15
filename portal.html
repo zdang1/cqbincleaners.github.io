@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=SzJA8j"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=SzJA8j" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=SPT7bw"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=SPT7bw" type="text/css">
 
   
   
@@ -107,130 +107,109 @@
     </nav>
 </section>
 
-<section class="title2 cleanm4_title2 cid-uMH0brmTfv" id="title2-3i">
-<script src="https://widgets.sqg.ee/main.js" defer></script>
+<section class="success-block cid-uMH0brmTfv" data-bs-version="5.1" id="title2-3i">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div id="registration-success" style="display:none; background: #d4edda; color: #155724; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center; font-weight: bold; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+          ✅ Thanks for registering! We’ve received your submission.
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="squeegee-portal-widget" data-override-api-url="https://sqg.ee" data-squeegee-key="33501e9b-9910-4837-b365-e773669f9648" data-views="sign-in" style="all: initial"></div>
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("registered") === "true") {
+        const successBox = document.getElementById("registration-success");
+        if (successBox) {
+          successBox.style.display = "block";
+        }
+      }
+    });
+  </script>
+</section><section class="title2 cleanm4_title2 cid-uMH0brmTfv" id="title2-3i">
+  <script src="https://widgets.sqg.ee/main.js" defer></script>
 
-<style>
-/* Main widget background and text */
-.squeegee-portal-widget {
-  background-color: #1CADE1 !important;
-  color: white !important;
-  padding: 20px;
-  border-radius: 10px;
-  font-family: inherit;
-}
+  <div class="squeegee-portal-widget" data-override-api-url="https://sqg.ee" data-squeegee-key="33501e9b-9910-4837-b365-e773669f9648" data-views="sign-in">
+  </div>
 
-/* Make all text white by default */
-.squeegee-portal-widget * {
-  color: white !important;
-  background-color: transparent !important;
-}
+  <style>
+    .squeegee-portal-widget {
+      background-color: #1CADE1 !important;
+      padding: 20px;
+      font-family: inherit;
+      color: white !important;
+      border-radius: 10px;
+    }
 
-/* Override button text specifically to black */
-.squeegee-portal-widget button,
-.squeegee-portal-widget input[type="submit"],
-.squeegee-portal-widget .btn {
-  background-color: white !important;
-  color: black !important;
-  border: none !important;
-  padding: 10px 20px !important;
-  border-radius: 5px !important;
-  cursor: pointer !important;
-  font-weight: bold !important;
-}
+    .squeegee-portal-widget * {
+      color: white !important;
+      background-color: transparent !important;
+    }
 
-/* Optional: Hover effect */
-.squeegee-portal-widget button:hover,
-.squeegee-portal-widget input[type="submit"]:hover,
-.squeegee-portal-widget .btn:hover {
-  background-color: #e0e0e0 !important;
-}
-</style>
-	
-    
+    .squeegee-portal-widget input[type="text"],
+    .squeegee-portal-widget input[type="email"],
+    .squeegee-portal-widget input[type="tel"],
+    .squeegee-portal-widget textarea,
+    .squeegee-portal-widget select {
+      background-color: #1CADE1 !important;
+      color: white !important;
+      border: 1px solid white !important;
+      padding: 10px !important;
+      border-radius: 5px !important;
+    }
 
+    .squeegee-portal-widget input::placeholder,
+    .squeegee-portal-widget textarea::placeholder {
+      color: white !important;
+      opacity: 0.7;
+    }
 
-	
+    .squeegee-portal-widget button,
+    .squeegee-portal-widget input[type="submit"],
+    .squeegee-portal-widget .btn {
+      background-color: white !important;
+      color: black !important;
+      border: none !important;
+      padding: 10px 20px !important;
+      border-radius: 5px !important;
+      cursor: pointer !important;
+      font-weight: bold !important;
+    }
 
-	<div class="align-center container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12">
-				<div class="content-inner d-flex justify-content-between flex-wrap align-center">
-					<div class="left-content">
-						
-						
-					</div>
-					<div class="right-content">
-						
-						<div class="buttons-wrap w-100">
-							
-						</div>
-					</div>
+    .squeegee-portal-widget button:hover,
+    .squeegee-portal-widget input[type="submit"]:hover,
+    .squeegee-portal-widget .btn:hover {
+      background-color: #e0e0e0 !important;
+    }
+  </style>
 
-				</div>
-			</div>
-		</div>
-	</div>
+  
 
+  
 
-<style>
-/* Set background blue for the whole widget */
-.squeegee-portal-widget {
-  background-color: #1CADE1 !important;
-  padding: 20px;
-  font-family: inherit;
-  color: white !important;
-}
+  
 
-/* Make all text inside the widget white */
-.squeegee-portal-widget * {
-  color: white !important;
-  background-color: transparent !important;
-}
-
-/* Style input fields, text areas, and dropdowns with blue background */
-.squeegee-portal-widget input[type="text"],
-.squeegee-portal-widget input[type="email"],
-.squeegee-portal-widget input[type="tel"],
-.squeegee-portal-widget textarea,
-.squeegee-portal-widget select {
-  background-color: #1CADE1 !important;
-  color: white !important;
-  border: 1px solid white !important;
-  padding: 10px !important;
-  border-radius: 5px !important;
-}
-
-/* Style placeholders inside input fields */
-.squeegee-portal-widget input::placeholder,
-.squeegee-portal-widget textarea::placeholder {
-  color: white !important;
-  opacity: 0.7;
-}
-
-/* Style buttons consistently */
-.squeegee-portal-widget button,
-.squeegee-portal-widget input[type="submit"],
-.squeegee-portal-widget .btn {
-  background-color: #1CADE1 !important;
-  color: white !important;
-  border: 1px solid white !important;
-  padding: 10px 20px !important;
-  border-radius: 5px !important;
-  cursor: pointer !important;
-  font-weight: bold !important;
-  text-transform: uppercase;
-}
-
-/* Optional: Hover effect for buttons */
-.squeegee-portal-widget button:hover,
-.squeegee-portal-widget input[type="submit"]:hover,
-.squeegee-portal-widget .btn:hover {
-  background-color: #18b0e6 !important;
-}
-</style>
+  <div class="align-center container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="content-inner d-flex justify-content-between flex-wrap align-center">
+          <div class="left-content">
+            
+            
+          </div>
+          <div class="right-content">
+            
+            <div class="buttons-wrap w-100">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="footer2 cid-uMGWKaVGOJ" id="footer2-3b">
